@@ -8,22 +8,22 @@ var ThreadSchema = new Schema({
         type: String,
         required: true
     },
-    link: {
-        type: String,
-        required: true
-    },
-    user: {
-        type: String,
-        required: true
-    },
-    replies: {
-        type: Number,
-        required: true
-    },
-    latest: {
-        type: String,
-        required: true
-    },
+    // link: {
+        // type: String,
+        // required: true
+    // },
+    // user: {
+        // type: String,
+        // required: true
+    // },
+    // replies: {
+        // type: Number,
+        // required: true
+    // },
+    // latest: {
+        // type: String,
+        // required: true
+    // },
     note: {
         type: Schema.Types.ObjectId,
         ref: "Note"

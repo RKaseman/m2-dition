@@ -1,0 +1,89 @@
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.tone {
+    position: relative;
+    text-shadow: 1px 2px 2px #000000;
+    height: 728px;
+    margin: 64px 0px;
+}
+
+.over {
+    position: absolute;
+    top: 0px;
+    height: 728px;
+    padding: 16px;
+}
+
+img {
+    opacity: 0.55;
+    width: 100%;
+}
+
+#scrapeNow {
+    background-color: #039be5;
+    margin-left: 32px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 56px;
+    padding-top: 8px;
+    margin-left: 32px;
+}
+
+h2 {
+    font-size: 16px;
+    color: #ffffff;
+    height: 96px;
+}
+
+#threads {
+    display: inline-block;
+    overflow: auto;
+    width: 60%;
+    height: 448px;
+    margin: 96px 0px;
+    padding: 32px;
+}
+
+#notes {
+    float: right;
+    width: 32%;
+    color: #000000;
+    margin: auto;
+    padding: 8px;
+}
+
+input, textarea {
+    display: block;
+    background-color: #c00b75;
+    padding: 8px;
+}
+
+input {
+    width: 100%;
+    height: 32px;
+    font-size: 24px;
+}
+
+textarea {
+    height: 200px;
+    font-size: 18px;
+    border: 1px solid #ffffff;
+}
+
+#savenote {
+    margin-top: 16px;
+}
+
+#titleinput {
+    width: 95%;
+    background-color: #c00b75;
+    border: 1px solid #ffffff;
+    padding: 8px;
+}
+
