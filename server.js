@@ -21,7 +21,7 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 app.get("/scrape", function (req, res) {
     db.Thread.deleteMany( { "note": { "$exists": false } } )
     .then(function () {
-        axios.get("https://www.googleapis.com/books/v1/volumes?q=inauthor:howard+bloom&key=AIzaSyA8DRL-hrmJktLRod7g8dbx2Y08h4SRrdU")
+        axios.get("https://www.googleapis.com/books/v1/volumes?q=inauthor:howard+bloom&key=")
         .then(function (response) {
             var $ = cheerio.load(response.data);
             console.log("-- TEST --");
@@ -42,12 +42,10 @@ app.get("/scrape", function (req, res) {
 });
 
 
-// AIzaSyA8DRL-hrmJktLRod7g8dbx2Y08h4SRrdU
-
 const getLibrary = () => {
     try {
-        // return axios.get("https://www.googleapis.com/books/v1/volumes?q=inauthor:david+eddings&key=AIzaSyA8DRL-hrmJktLRod7g8dbx2Y08h4SRrdU")
-        return axios.get("https://www.googleapis.com/books/v1/volumes?q=inauthor:howard+bloom&key=AIzaSyA8DRL-hrmJktLRod7g8dbx2Y08h4SRrdU")
+        // return axios.get("https://www.googleapis.com/books/v1/volumes?q=inauthor:david+eddings&key=")
+        return axios.get("https://www.googleapis.com/books/v1/volumes?q=inauthor:howard+bloom&key=")
     } catch (error) {
         console.error(error)
     }
