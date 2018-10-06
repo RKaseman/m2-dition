@@ -58,18 +58,14 @@ const countLibrary = async () => {
         .then(response => {
             if (response.data) {
                 console.log("--------");
-                // console.log(response.data.items);
+                console.log(response.data.items);
+                console.log("--------");
                 for (var i = 0; i < response.data.items.length; i++) {
                     for (var j = 0; j < response.data.items[i].volumeInfo.authors.length; j++) {
                 console.log(response.data.items[i].volumeInfo.title);
                 console.log(response.data.items[i].volumeInfo.subtitle);
                 console.log(response.data.items[i].volumeInfo.authors[j]);
                 console.log(response.data.items[i].volumeInfo.publishedDate);
-                // console.log(response.data.volumeInfo.title);
-                // console.log(response.data.volumeInfo.subtitle);
-                // console.log(response.data.volumeInfo.authors[0]);
-                // console.log(response.data.volumeInfo.publishedDate);
-                // console.log(`Got ${Object.entries(response.data.volumeInfo).length}`);
                 console.log("--------");
             }}
         }})
