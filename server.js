@@ -18,8 +18,8 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/medition";
 mongoose.Promise = Promise;
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
-// app.get("/scrape", function (req, res) {
-//     db.Thread.deleteMany({ "note": { "$exists": false } })
+app.get("/scrape", function (req, res) {
+    db.Thread.deleteMany({ "note": { "$exists": false } })
 //         .then(function () {
 //             axios.get("https://forums.elderscrollsonline.com/en/categories/website-article-discussions")
 //                 .then(function (response) {
@@ -32,25 +32,24 @@ mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 //                                 console.log(dbThread);
 //                             })
 //                             .catch(function (error) {
-//                                 return res.json(error);
-//                             });
-//                     });
-//                     res.send("Complete");
-//                 });
-//         });
-// });
-
-
-const getLibrary = () => {
-    try {
-        return axios.get("https://www.googleapis.com/books/v1/volumes?q=intitle:global+brain&inauthor:howard+bloom&key=")
-    } catch (error) {
-        console.error(error)
+    //                                 return res.json(error);
+    //                             });
+    //                     });
+    //                     res.send("Complete");
+    //                 });
+    //         });
+    
+    
+    const getLibrary = () => {
+        try {
+            return axios.get("https://www.googleapis.com/books/v1/volumes?q=intitle:global+brain&inauthor:howard+bloom&key=")
+        } catch (error) {
+            console.error(error)
+        }
     }
-}
-
-const countLibrary = async () => {
-    getLibrary()
+    
+    const countLibrary = async () => {
+        getLibrary()
         .then(response => {
             if (response.data) {
                 // console.log("--------");
@@ -58,21 +57,38 @@ const countLibrary = async () => {
                 console.log("--------");
                 for (var i = 0; i < response.data.items.length; i++) {
                     for (var j = 0; j < response.data.items[i].volumeInfo.authors.length; j++) {
-                        console.log(response.data.items[i].volumeInfo.title);
-                        console.log(response.data.items[i].volumeInfo.subtitle);
-                        console.log(response.data.items[i].volumeInfo.authors[j]);
-                        console.log(response.data.items[i].volumeInfo.publishedDate);
+                        // console.log(response.data.items[i].volumeInfo.title);
+                        // console.log(response.data.items[i].volumeInfo.subtitle);
+                        // console.log(response.data.items[i].volumeInfo.authors[j]);
+                        // console.log(response.data.items[i].volumeInfo.publishedDate);
+                        // console.log("--------");
+                        var result = {};
+                        result.title = response.data.items[i].volumeInfo.title;
+                        result.subtitle = response.data.items[i].volumeInfo.subtitle;
+                        result.authors = response.data.items[i].volumeInfo.authors[j];
+                        result.publishedDate = response.data.items[i].volumeInfo.publishedDate;
+                        console.log(result);
+                        // console.log(result.title);
+                        // console.log(result.subtitle);
+                        // console.log(result.authors);
+                        // console.log(result.publishedDate);
                         console.log("--------");
-                    }
+                db.Thread.create(result)
+                            .then(function (dbThread) {
+                                // console.log(result);
+                                console.log(dbThread);
+                            })
                 }
             }
-        })
-        .catch(error => {
-            console.log(error)
-        })
+        }
+    })
+    .catch(error => {
+        console.log(error)
+    })
 }
 
 countLibrary();
+});
 
 
 // routes
