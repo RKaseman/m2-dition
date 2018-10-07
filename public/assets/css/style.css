@@ -41,7 +41,7 @@ h2 {
     height: 96px;
 }
 
-#threads {
+#library {
     display: inline-block;
     overflow: auto;
     width: 60%;

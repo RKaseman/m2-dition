@@ -1,7 +1,7 @@
 
-$.getJSON("/threads", function (data) {
+$.getJSON("/library", function (data) {
     for (var i = 0; i < data.length; i++) {
-        $("#threads").append("<p data-id='" + data[i]._id + "'>"
+        $("#library").append("<p data-id='" + data[i]._id + "'>"
             + "<em>Thread Title: </em>" + data[i].title
             // + "<br><em>Link: </em><a href='" + data[i].link + "'>" + data[i].link + "</a>"
             // + "<br><em>Last User: </em><a href='https://forums.elderscrollsonline.com" + data[i].user + "'>" + data[i].user + "</a>"
@@ -12,7 +12,7 @@ $.getJSON("/threads", function (data) {
 });
 
 $(document).on("click", "#scrapeNow", function () {
-    $("#threads").empty();
+    $("#library").empty();
     $("#notes").empty();
     $.ajax({
         method: "GET",
@@ -28,7 +28,7 @@ $(document).on("click", "p", function () {
     var thisId = $(this).attr("data-id");
     $.ajax({
         method: "GET",
-        url: "/threads/" + thisId
+        url: "/library/" + thisId
     })
         .then(function (data) {
             console.log(data);
@@ -47,7 +47,7 @@ $(document).on("click", "#savenote", function () {
     var thisId = $(this).attr("data-id");
     $.ajax({
         method: "POST",
-        url: "/threads/" + thisId,
+        url: "/library/" + thisId,
         data: {
             title: $("#titleinput").val(),
             body: $("#bodyinput").val()
