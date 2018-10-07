@@ -2,10 +2,10 @@
 $.getJSON("/library", function (data) {
     for (var i = 0; i < data.length; i++) {
         $("#library").append("<p data-id='" + data[i]._id + "'>"
-            + "<em>Thread Title: </em>" + data[i].title
-            // + "<br><em>Link: </em><a href='" + data[i].link + "'>" + data[i].link + "</a>"
-            // + "<br><em>Last User: </em><a href='https://forums.elderscrollsonline.com" + data[i].user + "'>" + data[i].user + "</a>"
-            // + "<br><em>Reply Count: </em>" + data[i].replies
+            + "<em>Title: </em>" + data[i].title
+            + "<br><em>Subtitle: </em>" + data[i].subtitle
+            + "<br><em>Author(s): </em>" + data[i].authors
+            + "<br><em>Published Date: </em>" + data[i].publishedDate
             // + "<br><em>Date: </em>" + data[i].latest
             + "</p>");
     }

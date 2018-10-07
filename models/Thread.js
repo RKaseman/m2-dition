@@ -8,18 +8,18 @@ var ThreadSchema = new Schema({
         type: String,
         required: true
     },
-    // link: {
-        // type: String,
-        // required: true
-    // },
-    // user: {
-        // type: String,
-        // required: true
-    // },
-    // replies: {
-        // type: Number,
-        // required: true
-    // },
+    subtitle: {
+        type: String,
+        required: false
+    },
+    authors: {
+        type: String,
+        required: true
+    },
+    publishedDate: {
+        type: String,
+        required: true
+    },
     // latest: {
         // type: String,
         // required: true
