@@ -23,6 +23,18 @@ $(document).on("click", "#scrapeNow", function () {
         });
 });
 
+$(document).on("click", "#userAdd", function () {
+    $("#library").empty();
+    $("#notes").empty();
+    $.ajax({
+        method: "GET",
+        url: "/scrape"
+    })
+        .then(function () {
+            location.reload();
+        });
+});
+
 $(document).on("click", "p", function () {
     $("#notes").empty();
     var thisId = $(this).attr("data-id");
