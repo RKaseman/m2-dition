@@ -1,0 +1,23 @@
+
+.wrapper {
+    background: #222222;
+    width: 64%;
+    height: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    overflow: auto;
+    margin: 0px auto 32px auto;
+    padding: 8px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 320px) {
+    .wrapper {
+        width: 96%;
+        /* margin: 2px; */
+    }
+}
+

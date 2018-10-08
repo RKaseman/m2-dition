@@ -1,0 +1,77 @@
+
+.table {
+    width: 100%;
+    background: #dddddd;
+    color: #000000;
+    border: 1px solid #4444aa;
+    border-spacing: 0px;
+    /* box-shadow: 6px 6px 2px 0px #666666, 0px 0px 1px 0px #222222; */
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: #dddddd;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #3e8e41;
+}
+
+#myInput {
+    padding: 4px 16px;
+    border: 2px solid #4444aa;
+}
+
+#myInput:focus {
+    outline: 1px solid #dddddd;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f6f6;
+    min-width: 230px;
+    overflow: auto;
+    border: 1px solid #dddddd;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #111111;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown a:hover {
+    background-color: #dddddd;
+}
+
+.show {
+    display: block;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 320px) {
+    .App-header {
+        font-size: 1.0rem;
+    }
+    .App-title {
+        top: -24px;
+        font-size: 1.6rem;
+    }
+    p {
+        margin: 48% auto;
+    }
+}
+

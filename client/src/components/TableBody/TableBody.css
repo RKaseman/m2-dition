@@ -1,0 +1,23 @@
+
+tr {
+    height: 32px;
+}
+
+th {
+    height: 72px;
+    background-color: #dddddd;
+    text-align: left;
+    border: 1px solid #9999bb;
+}
+
+td {
+    width: 20%;
+    background-color: #bbbbbb;
+    border: 1px solid #9999bb;
+}
+
+.bookCover {
+    max-height: 80%;
+    padding: 0px 16px;
+}
+

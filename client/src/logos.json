@@ -1,0 +1,136 @@
+
+[
+    {
+        "id": 1,
+        "cover": "https://images-na.ssl-images-amazon.com/images/I/51br9cDPkNL._SX331_BO1,204,203,200_.jpg",
+        "title": "Global Brain: The Evolution of Mass Mind from the Big Bang to the 21st Century",
+        "subtitle": "assets/svgs/logoBlack.svg",
+        "author": "Howard Bloom",
+        "published": "August 1, 2001",
+        "kindle": "April 21, 2008",
+        "series": "",
+        "number": ""
+    },
+    {
+        "id": 2,
+        "cover": "https://images-na.ssl-images-amazon.com/images/I/41M9scXUiGL.jpg",
+        "title": "Delusions of Gender: How Our Minds, Society, and Neurosexism Create Difference",
+        "subtitle": "assets/svgs/logoBlue.svg",
+        "author": "Cordelia Fine",
+        "published": "August 8, 2011 (reprint)",
+        "kindle": "August 8, 2011",
+        "series": "",
+        "number": ""
+    },
+    {
+        "id": 3,
+        "cover": "coverImg3",
+        "title": "[Title]",
+        "subtitle": "assets/svgs/logoCyan.svg",
+        "author": "[Author]",
+        "published": "[Published Year]",
+        "kindle": "[Kindle Year]",
+        "series": "[Series]",
+        "number": "[1]"
+    },
+    {
+        "id": 4,
+        "cover": "coverImg4",
+        "title": "[Title]",
+        "subtitle": "assets/svgs/logoGreen.svg",
+        "author": "[Author]",
+        "published": "[Published Year]",
+        "kindle": "[Kindle Year]",
+        "series": "[Series]",
+        "number": "[Series #]"
+    },
+    {
+        "id": 5,
+        "cover": "coverImg5",
+        "title": "[Title]",
+        "subtitle": "assets/svgs/logoGrey.svg",
+        "author": "[Author]",
+        "published": "[Published Year]",
+        "kindle": "[Kindle Year]",
+        "series": "[Series]",
+        "number": "[Series #]"
+    },
+    {
+        "id": 6,
+        "cover": "coverImg6",
+        "title": "[Title]",
+        "subtitle": "assets/svgs/logoLime.svg",
+        "author": "[Author]",
+        "published": "[Published Year]",
+        "kindle": "[Kindle Year]",
+        "series": "[Series]",
+        "number": "[Series #]"
+    },
+    {
+        "id": 7,
+        "cover": "coverImg7",
+        "title": "[Title]",
+        "subtitle": "assets/svgs/logoLtGrey.svg",
+        "author": "[Author]",
+        "published": "[Published Year]",
+        "kindle": "[Kindle Year]",
+        "series": "[Series]",
+        "number": "[Series #]"
+    },
+    {
+        "id": 8,
+        "cover": "coverImg8",
+        "title": "[Title]",
+        "subtitle": "assets/svgs/logoOrange.svg",
+        "author": "[Author]",
+        "published": "[Published Year]",
+        "kindle": "[Kindle Year]",
+        "series": "[Series]",
+        "number": "[Series #]"
+    },
+    {
+        "id": 9,
+        "cover": "coverImg9",
+        "title": "[Title]",
+        "subtitle": "assets/svgs/logoPink.svg",
+        "author": "[Author]",
+        "published": "[Published Year]",
+        "kindle": "[Kindle Year]",
+        "series": "[Series]",
+        "number": "[Series #]"
+    },
+    {
+        "id": 10,
+        "cover": "coverImg10",
+        "title": "[Title]",
+        "subtitle": "assets/svgs/logoPurple.svg",
+        "author": "[Author]",
+        "published": "[Published Year]",
+        "kindle": "[Kindle Year]",
+        "series": "[Series]",
+        "number": "[Series #]"
+    },
+    {
+        "id": 11,
+        "cover": "coverImg11",
+        "title": "[Title]",
+        "subtitle": "assets/svgs/logoRed.svg",
+        "author": "[Author]",
+        "published": "[Published Year]",
+        "kindle": "[Kindle Year]",
+        "series": "[Series]",
+        "number": "[Series #]"
+    },
+    {
+        "id": 12,
+        "cover": "coverImg12",
+        "title": "[Title]",
+        "subtitle": "assets/svgs/logoYellow.svg",
+        "author": "[Author]",
+        "published": "[Published Year]",
+        "kindle": "[Kindle Year]",
+        "series": "[Series]",
+        "number": "[Series #]"
+    }
+]
+

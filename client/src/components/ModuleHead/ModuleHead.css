@@ -1,0 +1,95 @@
+
+.App-header {
+    position: relative;
+    width: 64%;
+    height: 8rem;
+    background-color: #222222;
+    font-size: 2rem;
+    color: #2a77ae;
+    text-shadow: 2px 1px 4px #000022;
+    margin: 0px auto;
+    padding: 8px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+}
+
+.headerLeft {
+    width: 32%;
+    background-color: #555555;
+}
+
+.headerMiddle {
+    width: 40%;
+}
+
+.App-title {
+    font-size: 2.5rem;
+}
+
+.headerRight {
+    width: 32%;
+    background-color: #555555;
+}
+
+p {
+    margin: 2.5rem auto;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 980px) {
+    .App-header {
+        font-size: 1.6rem;
+    }
+    .App-title {
+        top: -32px;
+        font-size: 2.0rem;
+    }
+    p {
+        margin: 24% auto;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .App-header {
+        font-size: 1.3rem;
+    }
+    .App-title {
+        top: -24px;
+        font-size: 1.6rem;
+    }
+    p {
+        margin: 30% auto;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .App-header {
+        font-size: 1.0rem;
+    }
+    .App-title {
+        top: -24px;
+        font-size: 1.6rem;
+    }
+    p {
+        margin: 40% auto;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .App-header {
+        width:96%;
+        font-size: 1.0rem;
+    }
+    .App-title {
+        top: -24px;
+        font-size: 1.6rem;
+    }
+    p {
+        margin: 48% auto;
+    }
+}
+
